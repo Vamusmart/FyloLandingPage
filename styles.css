@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.flexContainer {
+  display: flex;
+}
+
+.flexBoxLeft {
+  order: 1;
+  flex: 1 1 auto;
+  flex-shrink: 0;
+  align-self: stretch;
+  height: 95vh;
+  background: linear-gradient(to bottom, #110a6d, #7c78c5);
+}
+
+.fillwidth {
+  height: auto;
+  padding: 140px;
+}
+.flexBoxRight {
+  order: 2;
+  flex: 1 1 auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: stretch;
+  padding: 60px;
+}
+
+.logo {
+  height: 6vh;
+}
+
+.icons {
+  align-content: right;
+  float: right;
+}
+
+.icons :hover {
+  opacity: 0.7;
+  color: #7c78c5;
+}
+
+.fa {
+  font-size: 4vh;
+  width: 70px;
+  text-align: right;
+  text-decoration: none;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-envelope {
+  color: black;
+}
+
+.text {
+  margin-top: 15vh;
+  font-family: "Raleway", sans-serif;
+}
+
+.title {
+  font-weight: 900;
+}
+
+p {
+  color: grey;
+}
+.title-sign {
+  margin-top: 10vh;
+  font-size: 110%;
+}
+
+input[type="text"] {
+  height: 7vh;
+  width: 78%;
+  display: inline-block;
+  border: none;
+  font-size: 2vh;
+  box-shadow: 5px 5px 5px rgba(238, 221, 221, 0.87);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  height: 7vh;
+  width: 20%;
+  background-color: hsl(163, 95%, 43%);
+  color: white;
+  margin: 8px 1;
+  border: none;
+  box-shadow: 5px 5px 5px rgba(238, 221, 221, 0.87);
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  font-size: 2vh;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.policy {
+  margin-top: 15vh;
+  text-align: right;
+  font-size: 2vh;
+}
+
+a:visited {
+  color: black;
+}
+
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft Blue: hsl(243, 86%, 85%)
+- Dark Blue: hsl(243, 87%, 12%)
+
+### Accent
+
+- Green: hsl(163, 95%, 43%)
+
+### Neutral
+
+- Gray: hsl(0, 0%, 50%)
+
+## Typography
+
+### Headings
+
+- Family: [Raleway](https://fonts.google.com/specimen/Raleway)
+- Weights: 700
+
+### Body
+
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400, 700
+
+## Font Icons
+
+For the icons in the header. Use whichever font icon library you prefer. Below you'll find a couple of options:
+
+- [Font Awesome](https://fontawesome.com/)
+- [Ionicons](https://ionicons.com/)
+
+     */
