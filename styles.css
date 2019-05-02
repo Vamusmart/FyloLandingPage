@@ -12,10 +12,11 @@ body {
 
 .flexBoxLeft {
   order: 1;
-  flex: 1 1 auto;
+  /*   flex: 1 1 auto;
+ */
   flex-shrink: 0;
   align-self: stretch;
-  height: 95vh;
+  height: 100vh;
   background: linear-gradient(to bottom, #110a6d, #7c78c5);
 }
 
@@ -25,7 +26,8 @@ body {
 }
 .flexBoxRight {
   order: 2;
-  flex: 1 1 auto;
+  /*   flex: 1 1 auto;
+ */
   flex-grow: 1;
   flex-shrink: 1;
   align-self: stretch;
@@ -53,7 +55,7 @@ body {
   text-decoration: none;
 }
 
-.fa-facebook,
+.fa-coffee,
 .fa-twitter,
 .fa-envelope {
   color: black;
@@ -111,8 +113,54 @@ input[type="submit"]:hover {
   font-size: 2vh;
 }
 
-a:visited {
-  color: black;
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .flexContainer {
+    flex-direction: column;
+    width: 200%;
+  }
+  .flexBoxLeft {
+    order: 1;
+    height: 110vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("./images/bg-intro.svg");
+  }
+
+  .logo {
+    position: absolute;
+    top: 70px;
+  }
+
+  .fa-facebook,
+  .fa-twitter,
+  .fa-envelope {
+    color: white;
+    top: 80px;
+    position: absolute;
+  }
+
+  .fa-facebook {
+    left: 510px;
+  }
+
+  .fa-twitter {
+    left: 565px;
+  }
+
+  .fa-envelope {
+    left: 620px;
+  }
+
+  .title-sign {
+    margin-top: 20vh;
+    font-size: 130%;
+    font-weight: 900;
+  }
+  .text {
+    margin-top: 0;
+    font-family: "Raleway", sans-serif;
+  }
 }
 
 /* # Front-end Style Guide
