@@ -38,6 +38,7 @@ body {
 .logowhite {
   display: none;
   height: 5vh;
+  z-index: 1;
 }
 
 .icons {
@@ -135,7 +136,6 @@ input[type="submit"]:hover {
     display: inline;
     position: absolute;
     top: 80px;
-    z-index: 1;
   }
 
   .logoblack {
