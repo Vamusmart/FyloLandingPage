@@ -259,6 +259,18 @@ input[type="submit"]:hover {
   .flexBoxLeft {
     height: 190vh;
   }
+
+  .fa-facebook {
+    left: 500px;
+  }
+
+  .fa-twitter {
+    left: 580px;
+  }
+
+  .fa-envelope {
+    left: 650px;
+  }
 }
 
 /*  Layout
