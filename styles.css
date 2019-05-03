@@ -20,7 +20,7 @@ body {
 
 .fillwidth {
   height: auto;
-  padding: 140px;
+  padding: 23vh;
 }
 
 .flexBoxRight {
@@ -117,27 +117,25 @@ input[type="submit"]:hover {
   color: #7c78c5;
 }
 
-/* Responsive layout - when the screen is less than 500px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
+/* Responsive layout */
+
+@media screen and (max-width: 1024px) {
   .flexContainer {
     flex-direction: column;
-    width: 200%;
+    width: 120%;
   }
-
   .flexBoxLeft {
     order: 1;
     height: 110vh;
     background-size: 100%;
     background-repeat: no-repeat;
     background-image: url("./images/bg-intro.svg");
-    z-index: -1;
   }
 
   .logowhite {
     display: inline;
     position: absolute;
     top: 80px;
-    z-index: 1;
   }
 
   .logoblack {
@@ -153,26 +151,113 @@ input[type="submit"]:hover {
   }
 
   .fa-facebook {
-    left: 510px;
+    left: 800px;
   }
 
   .fa-twitter {
-    left: 565px;
+    left: 950px;
   }
 
   .fa-envelope {
-    left: 620px;
+    left: 1100px;
   }
 
   .title-sign {
-    margin-top: 20vh;
+    margin-top: 0;
     font-size: 130%;
     font-weight: 900;
   }
 
   .text {
-    margin-top: 0;
+    margin-top: 0vh;
+    font-size: 130%;
+
     font-family: "Raleway", sans-serif;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flexContainer {
+    width: 120%;
+  }
+
+  .flexBoxLeft {
+    height: 135vh;
+  }
+
+  .fa-facebook {
+    left: 610px;
+  }
+
+  .fa-twitter {
+    left: 715px;
+  }
+
+  .fa-envelope {
+    left: 800px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .flexContainer {
+    flex-direction: column;
+    width: 200%;
+  }
+
+  .fa-facebook {
+    left: 580px;
+  }
+
+  .fa-twitter {
+    left: 630px;
+  }
+
+  .fa-envelope {
+    left: 680px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .flexContainer {
+    flex-direction: column;
+    width: 230%;
+  }
+
+  .flexBoxLeft {
+    height: 170vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("./images/bg-intro.svg");
+  }
+
+  .fa-facebook {
+    left: 580px;
+  }
+
+  .fa-twitter {
+    left: 650px;
+  }
+
+  .fa-envelope {
+    left: 730px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .flexContainer {
+    flex-direction: column;
+    width: 230%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .flexContainer {
+    flex-direction: column;
+    width: 250%;
+  }
+
+  .flexBoxLeft {
+    height: 150vh;
   }
 }
 
