@@ -130,12 +130,14 @@ input[type="submit"]:hover {
     background-size: 100%;
     background-repeat: no-repeat;
     background-image: url("./images/bg-intro.svg");
+    z-index: -1;
   }
 
   .logowhite {
     display: inline;
     position: absolute;
     top: 80px;
+    z-index: 1;
   }
 
   .logoblack {
