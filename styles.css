@@ -12,8 +12,6 @@ body {
 
 .flexBoxLeft {
   order: 1;
-  /*   flex: 1 1 auto;
- */
   flex-shrink: 0;
   align-self: stretch;
   height: 100vh;
@@ -24,10 +22,9 @@ body {
   height: auto;
   padding: 140px;
 }
+
 .flexBoxRight {
   order: 2;
-  /*   flex: 1 1 auto;
- */
   flex-grow: 1;
   flex-shrink: 1;
   align-self: stretch;
@@ -36,6 +33,11 @@ body {
 
 .logo {
   height: 6vh;
+}
+
+.logowhite {
+  display: none;
+  height: 5vh;
 }
 
 .icons {
@@ -53,11 +55,6 @@ body {
   width: 70px;
   text-align: right;
   text-decoration: none;
-}
-
-.fa-coffee,
-.fa-twitter,
-.fa-envelope {
   color: black;
 }
 
@@ -73,6 +70,7 @@ body {
 p {
   color: grey;
 }
+
 .title-sign {
   margin-top: 10vh;
   font-size: 110%;
@@ -111,14 +109,20 @@ input[type="submit"]:hover {
   margin-top: 15vh;
   text-align: right;
   font-size: 2vh;
+  color: black;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+.policy:visited {
+  color: #7c78c5;
+}
+
+/* Responsive layout - when the screen is less than 500px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 500px) {
   .flexContainer {
     flex-direction: column;
     width: 200%;
   }
+
   .flexBoxLeft {
     order: 1;
     height: 110vh;
@@ -127,9 +131,14 @@ input[type="submit"]:hover {
     background-image: url("./images/bg-intro.svg");
   }
 
-  .logo {
+  .logowhite {
+    display: inline;
     position: absolute;
-    top: 70px;
+    top: 80px;
+  }
+
+  .logoblack {
+    display: none;
   }
 
   .fa-facebook,
@@ -157,53 +166,15 @@ input[type="submit"]:hover {
     font-size: 130%;
     font-weight: 900;
   }
+
   .text {
     margin-top: 0;
     font-family: "Raleway", sans-serif;
   }
 }
 
-/* # Front-end Style Guide
-
-## Layout
-
+/*  Layout
 The designs were created to the following widths:
-
 - Mobile: 375px
 - Desktop: 1440px
-
-## Colors
-
-### Primary
-
-- Soft Blue: hsl(243, 86%, 85%)
-- Dark Blue: hsl(243, 87%, 12%)
-
-### Accent
-
-- Green: hsl(163, 95%, 43%)
-
-### Neutral
-
-- Gray: hsl(0, 0%, 50%)
-
-## Typography
-
-### Headings
-
-- Family: [Raleway](https://fonts.google.com/specimen/Raleway)
-- Weights: 700
-
-### Body
-
-- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
-- Weights: 400, 700
-
-## Font Icons
-
-For the icons in the header. Use whichever font icon library you prefer. Below you'll find a couple of options:
-
-- [Font Awesome](https://fontawesome.com/)
-- [Ionicons](https://ionicons.com/)
-
-     */
+*/
