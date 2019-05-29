@@ -6,6 +6,10 @@ body {
   font-size: 1.2em;
 }
 
+body {
+  overflow-y: hidden;
+}
+
 .flexContainer {
   display: flex;
 }
@@ -119,7 +123,25 @@ input[type="submit"]:hover {
 
 /* Responsive layout */
 
+@media screen and (min-width: 1025px) and (max-width: 1900px) {
+  body {
+    overflow-y: hidden;
+  }
+
+  .title-sign {
+    margin-top: 22vh;
+  }
+
+  .fillwidth {
+    height: auto;
+    padding: 12vh;
+  }
+}
+
 @media screen and (max-width: 1024px) {
+  body {
+    overflow-y: scroll;
+  }
   .flexContainer {
     flex-direction: column;
     width: 120%;
